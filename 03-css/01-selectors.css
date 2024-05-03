@@ -10,12 +10,44 @@
 
 /* Use attribute selectors for the first part of the exercise */
 
+/*
 li[class] {
   color: var(--red);
+}
+*/
+
+/* the equality using 'id' -> 'id="sting"'      */
+li[id="cat"] {
+  color: var(--teal);
+}
+
+/* for prefix using '^' -> ' ^= "sting"   '*/
+li[class^="p"] {
+  color: var(--green);
+}
+
+/* substring, using '*' -> '*='     */
+li[class*="do"] {
+  color: var(--royalblue);
+}
+
+/* suffixes using '$' ->  '$="     */
+li[class$="g"] {
+  color: var(--violet);
 }
 
 /* Use descendant, child, and sibling selectors for the second part */
 
 section li {
   color: var(--green);
+}
+
+/* sibling selector  '~' -> '~li' */
+.first ~ li {
+  color: var(--violet);
+}
+
+/* next sibling, aka immediately adjacent '+'*/
+.second + li {
+  color: var(--royalblue);
 }

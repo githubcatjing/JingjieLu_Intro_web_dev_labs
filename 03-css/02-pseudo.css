@@ -2,3 +2,12 @@
   width: 600px;
   margin: 40px auto;
 }
+
+p::first-letter {
+  font-size: 3em;
+}
+
+/* the pseudo class using one : to represent it*/
+p:hover {
+  background-color: lightskyblue;
+}
